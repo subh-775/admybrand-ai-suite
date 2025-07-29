@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-white text-gray-800 dark:bg-black dark:text-white transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-dark {
+    background: linear-gradient(135deg, #a78bfa, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-bg {
+    @apply bg-white dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-xl;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .dark-card {
+    @apply bg-gray-800 text-white;
+  }
+
+  .dark-section {
+    @apply bg-gray-900 text-white;
+  }
+
+  .feature-card {
+    @apply bg-white dark:bg-gray-800 text-black dark:text-white shadow-md rounded-lg p-6;
+  }
+
+  .plan-card {
+    @apply bg-white dark:bg-gray-800 text-black dark:text-white border border-gray-200 dark:border-gray-700 shadow-md rounded-xl;
+  }
+
+  .stat-highlight {
+    @apply text-secondary-600 dark:text-gray-300;
+  }
+
+  .stat-number {
+    @apply text-3xl font-bold text-primary-600 dark:text-primary-400;
+  }
+
+  .feature-header {
+    @apply text-3xl md:text-5xl font-bold text-secondary-900 dark:text-white;
+  }
+
+  .feature-subtext {
+    @apply text-secondary-600 dark:text-gray-300;
+  }
+
+  .plan-title {
+    @apply text-2xl font-bold text-secondary-900 dark:text-white mb-2;
+  }
+
+  .testimonial-title {
+  @apply text-secondary-900 dark:text-white;
+}
+
+.testimonial-text {
+  @apply text-secondary-600 dark:text-gray-300;
+}
+
+.testimonial-card {
+  @apply glass-effect dark:bg-gray-800 border-0 transition-colors duration-300;
+}
+
+.testimonial-quote {
+  @apply text-secondary-700 dark:text-gray-300;
+}
+
+.testimonial-name {
+  @apply font-semibold text-secondary-900 dark:text-white;
+}
+
+.testimonial-role {
+  @apply text-secondary-600 dark:text-gray-400;
+}
+
+.testimonial-company {
+  @apply text-primary-600 dark:text-primary-400;
+}
+
+.testimonial-result-box {
+  @apply bg-primary-50 dark:bg-gray-700 rounded-lg p-4 text-center;
+}
+
+.testimonial-result-value {
+  @apply text-2xl font-bold text-primary-600 dark:text-primary-400;
+}
+
+.testimonial-result-label {
+  @apply text-sm text-secondary-600 dark:text-gray-300;
+}
+
+.client-company {
+  @apply text-secondary-500 dark:text-gray-400;
+}
+
+.stats-value {
+  @apply text-3xl md:text-4xl font-bold text-primary-600 dark:text-primary-400;
+}
+
+.stats-label {
+  @apply text-secondary-600 dark:text-gray-300;
+}
+
+.faq-title {
+  @apply text-secondary-900 dark:text-white;
+}
+
+.faq-subtitle {
+  @apply text-secondary-600 dark:text-gray-300;
+}
+
+.faq-item {
+  @apply bg-white dark:bg-gray-800 text-secondary-800 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg;
+}
+
+.faq-question {
+  @apply text-lg font-semibold text-secondary-900 dark:text-white;
+}
+
+.faq-answer {
+  @apply text-secondary-600 dark:text-gray-300 mt-2;
+}
+
+
+  .plan-description,
+  .plan-price,
+  .plan-feature {
+    @apply text-secondary-600 dark:text-gray-300;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+  }
+
+  .transition-theme {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
