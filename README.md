@@ -1,17 +1,8 @@
----
-title: demo_2nd_space
-emoji: 🏃
-colorFrom: pink
-colorTo: pink
-sdk: docker
-pinned: false
-license: apache-2.0
-short_description: Transform your marketing campaigns with advanced AI
----
-
 # ADmyBRAND AI Suite - Landing Page
 
 A modern, responsive SaaS landing page built with Next.js 14, TypeScript, and Tailwind CSS. This project showcases cutting-edge AI marketing tools with beautiful animations and interactive components.
+
+### [**Hosted App**](https://admybrand-ai-suite-weld.vercel.app/)
 
 ## 🚀 Features
 
