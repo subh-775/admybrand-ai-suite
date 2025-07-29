@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
       name: 'Sarah Johnson',
       role: 'Marketing Director',
       company: 'TechFlow Inc.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop&crop=face',
       rating: 5,
       text: 'ADmyBRAND AI Suite completely transformed our marketing strategy. We saw a 340% increase in qualified leads within just 3 months. The AI insights are incredibly accurate and actionable.',
       results: { metric: '340%', label: 'Lead Increase' }
