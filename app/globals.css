@@ -164,6 +164,10 @@
   @apply text-secondary-600 dark:text-gray-300 mt-2;
 }
 
+ .theme-toggle-button {
+    @apply fixed top-4 right-4 z-50; /* fixed always top right */
+  }
+
 
   .plan-description,
   .plan-price,
