@@ -2,11 +2,13 @@
 
 A modern, responsive SaaS landing page built with Next.js 14, TypeScript, and Tailwind CSS. This project showcases cutting-edge AI marketing tools with beautiful animations and interactive components.
 
+This project is created for the ADmyBRAND AI Coder hiring task.
+
 ### [**Hosted App**](https://admybrand-ai-suite-subh.vercel.app/)
 
 ## 🚀 Features
 
-- **Modern Design**: 2025 design trends with glassmorphism and smooth animations
+- **Modern Design**: Design trends with glassmorphism and smooth animations
 - **Responsive**: Perfect on desktop, tablet, and mobile devices
 - **Interactive Components**: 8+ reusable UI components with hover effects
 - **Smooth Animations**: Framer Motion powered animations and transitions
@@ -16,49 +18,69 @@ A modern, responsive SaaS landing page built with Next.js 14, TypeScript, and Ta
 ## 📁 Project Structure
 
 ```
-├── app/
-│   ├── globals.css          # Global styles with Tailwind
-│   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Main page
-├── components/
-│   ├── ui/                  # Reusable UI components
-│   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   ├── Input.tsx
-│   │   └── Modal.tsx
-│   ├── Hero.tsx             # Hero section
-│   ├── Features.tsx         # Features showcase
-│   ├── Pricing.tsx          # Pricing cards
-│   ├── Testimonials.tsx     # Customer testimonials
-│   ├── FAQ.tsx              # FAQ accordion
-│   ├── Footer.tsx           # Footer with links
-│   └── Navbar.tsx           # Navigation
-├── lib/
-│   └── utils.ts             # Utility functions
-└── package.json
+admybrand-ai-suite/
+│
+├── app/             # Next.js 13+ app directory
+│ ├── globals.css    # Global styles and Tailwind classes
+│ ├── layout.tsx     # Root layout wrapper
+│ └── page.tsx       # Main landing page
+│
+├── components/      # Reusable UI components
+│ ├── Hero.tsx
+│ ├── Features.tsx
+│ ├── Pricing.tsx
+│ ├── Testimonials.tsx
+│ ├── FAQ.tsx
+│ ├── DemoSection.tsx
+│ ├── Navbar.tsx
+│ └── ThemeToggle.tsx
+│
+├── lib/           # Utility logic, constants, helpers
+│
+├── public/        # Static assets served as-is
+│ └── mydemo.gif   # Demo animation shown on landing
+│
+├── .dockerignore  # Files ignored in Docker builds
+├── .gitattributes # Git LFS config if any
+├── Dockerfile     # Docker setup for production
+├── docker-compose.yml # Local dev setup with Docker Compose
+│
+├── nginx.conf     # NGINX reverse proxy config (optional)
+│
+├── next.config.js # Next.js custom configuration
+├── package.json # Project dependencies and scripts
+├── postcss.config.js # PostCSS/Tailwind config
+├── tailwind.config.js # Tailwind custom config
+├── tsconfig.json # TypeScript configuration
+│
+├── README.md     # Project overview and instructions
+├── LICENSE       # Open source license(Apache 2.0)
+└── AI_USAGE_REPORT.pdf # AI usage evidence (Task B)
 ```
 
-## 🛠 Installation & Setup
+## 🐳 Run Locally via Docker
+Make sure you have Docker installed.
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+1. Clone this repo
+```bash
+git clone https://github.com/subh-775/admybrand-ai-suite.git
+cd admybrand-ai-suite
+```
 
-2. **Run Development Server**
-   ```bash
-   npm run dev
-   ```
+2. Build the Docker image
+``` bash
+docker build -t admybrand-ai .
+```
 
-3. **Build for Production**
-   ```bash
-   npm run build
-   npm start
-   ```
+4. Run the container
+``` bash
+docker run -p 7860:7860 admybrand-ai
+```
 
-4. **Deploy to HF-Space**
-   - Upload all files to your HuggingFace Space
-   - The project is configured with `output: 'export'` for static deployment
+Access your container at: http://localhost:7860
+
+---
+
 
 ## 🎨 Components Overview
 
@@ -121,20 +143,12 @@ A modern, responsive SaaS landing page built with Next.js 14, TypeScript, and Ta
 
 ## 🚀 Deployment
 
-The project is configured for static export and can be deployed to:
-- HuggingFace Spaces
-- Vercel
-- Netlify
-- GitHub Pages
+The project is configured for static export and is deployed at: **Vercel**
 
 ## 📄 License
 
-This project is created for the ADmyBRAND AI Coder hiring task.
+Licensed Under Apache 2.0 License.
 
 ---
 
-**Built with ❤️ using AI-assisted development**
----
-
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+<p align="center"><strong>Built with ❤️ using AI-assisted development</strong></p>
