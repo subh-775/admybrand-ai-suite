@@ -4,8 +4,7 @@
 
 **Primary Tools:**
 - Claude (Anthropic): Architecture planning, component design, and code generation
-- GitHub Copilot: Code completion and optimization suggestions
-- v0.dev: UI component inspiration and rapid prototyping
+- Chat GPT: Code completion, debugging and optimization suggestions
 
 **Key Use Cases:**
 - Component architecture and file structure planning
